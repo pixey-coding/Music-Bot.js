@@ -1,7 +1,8 @@
 const { MessageEmbed } = require("discord.js");
 
 exports.run = async (client, message) => {
-  const commands = `connect\`\` - join the voice channel you are in
+  const commands = `
+connect\`\` - join the voice channel you are in
    disconnect\`\` - leave the voice channel you are in
    play <Song Name or url>\`\` - play songs from youtube
    pause\`\` - pause currently playing songs in the server
@@ -27,7 +28,7 @@ exports.run = async (client, message) => {
   message.channel.send(
     new MessageEmbed()
       .setAuthor(
-        "MusicBot Commands Help",
+        "MusicBot commands Help ",
         "https://img.icons8.com/color/2x/services--v2.gif"
       )
       .setColor("FFFBFB")
